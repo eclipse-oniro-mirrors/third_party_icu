@@ -26,6 +26,7 @@ config("icu_config") {
 }
 
 ohos_shared_library("shared_icuuc_host") {
+  branch_protector_ret = "pac_ret"
   configs = [
     ":icu_config",
     "//build/config/compiler:rtti",
@@ -280,6 +281,7 @@ group("icui18n_host") {
 }
 
 ohos_shared_library("shared_icutu") {
+  branch_protector_ret = "pac_ret"
   configs = [
     ":icu_config",
     "//build/config/compiler:rtti",
@@ -354,6 +356,7 @@ ohos_shared_library("shared_icutu") {
 }
 
 ohos_shared_library("shared_icuio") {
+  branch_protector_ret = "pac_ret"
   configs = [
     ":icu_config",
     "//build/config/compiler:rtti",
