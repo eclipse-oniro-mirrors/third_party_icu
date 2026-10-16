@@ -29,6 +29,7 @@ group("build_icudt72l") {
 }
 
 ohos_shared_library("icundk") {
+  branch_protector_ret = "pac_ret"
   ldflags = [
     "-shared",
     "-lm",
